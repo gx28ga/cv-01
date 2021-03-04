@@ -1,6 +1,7 @@
 const string = `
   /*
-    注释
+    大家好，我叫Randy，是一名已经工作三年了前端。
+    首先我给大家画一个阴阳太极图～～～～
   */
   .base {
     display: flex;

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html, body {
+    width: 100%;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    line-height: 1.5;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#desc, #display {
+    width: 100%;
+    height: 50vh;
+}
+#desc {
+    order: 2;
+    overflow: auto;
+    word-break: break-all;
+}
+#display {
+    order: 1;
+}
+@media (min-width: 768px) {
+    main {
+        min-width: 1000px;
+        flex-direction: row;
+    }
+    #desc, #display {
+        width: 50%;
+        height: 100vh;
+    }
+    #desc {
+        order: 1;
+    }
+    #display {
+        order: 2;
+    }
+}
